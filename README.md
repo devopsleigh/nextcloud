@@ -11,10 +11,10 @@ Runs Docker containers for NextCloud and Postgres.
 1. Download the repository
 
    ```sh
-    git clone https://github.com/devopsleigh/nextcloud.git
-    cd nextcloud
-    nano .env
-    ```
+   git clone https://github.com/devopsleigh/nextcloud.git
+   cd nextcloud
+   nano .env
+   ```
 
 2. Change secrets appropriately
 
