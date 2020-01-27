@@ -6,7 +6,7 @@ services:
     container_name: nextcloud
     environment:
       - PUID=1000
-      - PGID=1000
+      - PGID=100
       - TZ=${TZ}
     volumes:
       - /sharedfolders/appdata/nextcloud:/config
@@ -14,6 +14,7 @@ services:
     ports:
       - 444:443
     restart: unless-stopped
+    network_mode: bridge
   nextclouddb:
     image: postgres
     container_name: nextclouddb
@@ -26,3 +27,4 @@ services:
     ports:
       - "5432:5432/tcp"
     restart: unless-stopped
+    network_mode: bridge
