@@ -9,8 +9,8 @@ services:
       - PGID=100
       - TZ=${TZ}
     volumes:
-      - /sharedfolders/appdata/nextcloud:/config
-      - /sharedfolders/nextcloud:/data
+      - ${PATH_CONFIG}:/config
+      - ${PATH_DATA}:/data
     ports:
       - 444:443
     restart: unless-stopped

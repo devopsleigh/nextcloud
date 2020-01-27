@@ -18,7 +18,9 @@ Runs Docker containers for NextCloud and Postgres.
 
 2. Change secrets appropriately
 
-   ```sh
+   ```yaml
+   PATH_CONFIG=/path/to/share
+   PATH_DATA=/path/to/share
    TZ=Country/City
    POSTGRES_USER=nextcloud
    POSTGRES_PASSWORD=somethingsecure
