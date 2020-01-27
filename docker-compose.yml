@@ -23,7 +23,7 @@ services:
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - POSTGRES_DB=nextcloud
     volumes:
-      - /sharedfolders/appdata/nextclouddb:/var/lib/postgresql/data
+      - ${PATH_DB_DATA}:/var/lib/postgresql/data
     ports:
       - "5432:5432/tcp"
     restart: unless-stopped
